@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+     "settings":
+     {
+          "xdebug": { 
+            "url": "http://localhost/luolai-h5-20151205/db/updatescorebyplayer2.php"
+        }
+     }
+}

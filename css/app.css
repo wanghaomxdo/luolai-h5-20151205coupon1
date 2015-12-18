@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+html,body{height:100%}
+body,input,button,textarea,select{font-size:16px; font-family: "SimHei",Tahoma,Helvetica,Arial; color:#000;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+li,dd{list-style:none}
+a{color:#d30000;text-decoration:none}
+a:hover,a:active{text-decoration:underline}
+section,article,aside,header,footer,nav,dialog,figure,hgroup{display:block}
+img{max-width:100%;}
+
+/* loading */
+body{background:#000;background:-webkit-gradient(radial,center center,120,center center,900,from(#33495e),to(#2e2329));background:-moz-radial-gradient(circle,#33495e,#2e2329)}.loader{margin:0 auto; width:480px; position: absolute; top:50%; }h1{font-family:'Actor',sans-serif;color:#FFF;font-size:16px;letter-spacing:1px;font-weight:200;text-align:center}.loader span{width:16px;height:16px;border-radius:50%;display:inline-block;position:absolute;left:50%;margin-left:-10px;-webkit-animation:3s infinite linear;-moz-animation:3s infinite linear;-o-animation:3s infinite linear}.loader span:nth-child(2){background:#e84c3d;-webkit-animation:kiri 1.2s infinite linear;-moz-animation:kiri 1.2s infinite linear;-o-animation:kiri 1.2s infinite linear}.loader span:nth-child(3){background:#f1c40f;z-index:100}.loader span:nth-child(4){background:#2fcc71;-webkit-animation:kanan 1.2s infinite linear;-moz-animation:kanan 1.2s infinite linear;-o-animation:kanan 1.2s infinite linear}@-webkit-keyframes kanan{0%{-webkit-transform:translateX(20px)}50%{-webkit-transform:translateX(-20px)}100%{-webkit-transform:translateX(20px);z-index:200}}@-moz-keyframes kanan{0%{-moz-transform:translateX(20px)}50%{-moz-transform:translateX(-20px)}100%{-moz-transform:translateX(20px);z-index:200}}@-o-keyframes kanan{0%{-o-transform:translateX(20px)}50%{-o-transform:translateX(-20px)}100%{-o-transform:translateX(20px);z-index:200}}@-webkit-keyframes kiri{0%{-webkit-transform:translateX(-20px);z-index:200}50%{-webkit-transform:translateX(20px)}100%{-webkit-transform:translateX(-20px)}}@-moz-keyframes kiri{0%{-moz-transform:translateX(-20px);z-index:200}50%{-moz-transform:translateX(20px)}100%{-moz-transform:translateX(-20px)}}@-o-keyframes kiri{0%{-o-transform:translateX(-20px);z-index:200}50%{-o-transform:translateX(20px)}100%{-o-transform:translateX(-20px)}}
+
+/*-- audio.html
+====================================================== */
+.audio-icon {position: absolute; right: 20px; top: 20px; z-index: 200; display: block; width: 44px; height: 44px;background-repeat: no-repeat; background-image: url(../images/audio/music-icon.png); background-size: contain; display: none;}
+.audio-icon-animation{animation: audioicon-rotate 2s linear infinite; -webkit-animation: audioicon-rotate 2s linear infinite;}
+@keyframes audioicon-rotate {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}}
+@-webkit-keyframes audioicon-rotate {0% {-webkit-transform: rotate(0deg); } 100% {-webkit-transform: rotate(360deg);}}
+
+
+/*-- home.html
+====================================================== */
+.swiper-container{width:480px; height:100%; background: #000000; margin: 0 auto; display: none; user-select: none; touch-callout:none; -webkit-user-select: none; -webkit-touch-callout:none;}     
+
+/* p1 */
+.p1{background-image: url(../images/p1/bg.png); background-repeat: no-repeat;}
+.p1 .e-1{position: absolute; top: 17px;  left: 52px;}
+.p1 .e-2{position: absolute; top: 162px;  left: 18px;}
+.p1 .e-3{position: absolute; bottom: 0px;  left: 95px;}
+
+/* p2 */
+.p2{background-image: url(../images/p1/bg.png); background-repeat: no-repeat;}
+.p2 .e-1{position: absolute; top: 55px;  left: 99px;}
+.p2 .e-2{position: absolute; top: 259px;  left: 48px;}
+.p2 .e-3{position: absolute; top: 325px;  left: 277px;}
+.mo-pop-body .gamerules{display: block; width:480px; height:773px; background-image: url(../images/p2/m-1.png); background-repeat: no-repeat;}
+.mo-pop-body .confirm{position: absolute; bottom: 70px;  left: 95px; width: 295px; height: 50px;}
+
+/* p3 */
+.p3{background-image: url(../images/p3/bg.png); background-repeat: no-repeat;}
+.p3 .back{position: absolute; top: 0px;  left: 0px; width: 80px; height: 45px;}
+.p3 .qr{position: absolute; top: 283px;  left: 107px; width: 260px; height: 260px;}
+
+/* p4 */
+.p4{background-image: url(../images/p1/bg.png); background-repeat: no-repeat;}
+.p4 .gamerules{position: absolute; top: 0px; left: 0px;}
+.p4 .confirm{position: absolute; bottom: 70px; left: 95px; width: 295px; height: 50px;}
+.p4 .e-1{position: absolute; top: 55px;  left: 116px;}
+.p4 .e-2{position: absolute; top: 235px;  left: 37px;}
+.p4 .e-3{position: absolute; top: 345px;  left: 175px;}
+.p4 .e-4{position: absolute; top: 465px;  left: 50px;}
+
+/* p5 */
+.p5{background-image: url(../images/p1/bg.png); background-repeat: no-repeat;}
+.p5 .e-1{position: absolute; top: 55px;  left: 116px;}
+.p5 .e-2{position: absolute; top: 226px;  left: 144px;}
+.p5 .e-3{position: absolute; top: 450px;  left: 64px;}
+.p5 .e-4{position: absolute; top: 483px;  left: 237px;}
+
+/* p6 */
+.p6 .overlay{position: absolute; top: 0px; left: 0px; display: block; width: 480px; height: 100%;}
+.p6 .m-1{position: absolute; top: 0px; left: 0px;}
+.p6 .confirm{position: absolute; bottom: 70px;  left: 95px; width: 295px; height: 50px; z-index: 9000;}
+.p6 .wait-player{position: absolute; bottom: 70px;  left: 95px; width: 295px; height: 50px; z-index: 9000; display: none;}
+
+.p6 .back{position: absolute; top: 0px;  left: 0px; width: 80px; height: 45px;}
+.p6 .shaketime{position: absolute; top: 0px;  left: 0px; width: 480px; font-size: 20px; color: #fff; font-weight: bold; text-align: center;}
+.p6 .countdown{position: absolute; top: 21px;  left: 230px; font-size: 46px; color: #fff; font-weight: bold; text-align: center;}
+.p6 .e-1{position: absolute; top: 26px;  left: 94px;}
+
+.p6 .boy {display: none; width: 480px; height: 100%; background-image: url(../images/p6/boy/bg.png); background-repeat: no-repeat;}
+.p6 .boy .e-2{position: absolute; top: 103px;  left: 27px;}
+.p6 .boy .e-3{position: absolute; top: 452px;  left: 27px;}
+.p6 .boy .e-4{position: absolute; bottom: 20px;  left: 27px;}
+.p6 .boy .e-5{position: absolute; bottom: 20px;  left: 150px;}
+
+.p6 .girl {display: none; width: 480px; height: 100%; background-image: url(../images/p6/girl/bg.png); background-repeat: no-repeat;}
+.p6 .girl .e-2{position: absolute; top: 155px;  left: 32px;}
+.p6 .girl .e-3{position: absolute; top: 452px;  left: 322px;}
+.p6 .girl .e-4{position: absolute; bottom: 20px;  left: 335px;}
+.p6 .girl .e-5{position: absolute; bottom: 20px;  left: 118px;}
+
+@-webkit-keyframes hand_shake {
+    0% {
+        -webkit-transform: rotate(0);
+           -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0); }
+    50% {
+        -webkit-transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+             -o-transform: rotate(30deg);
+                transform: rotate(30deg); }
+    100% {
+        -webkit-transform: rotate(0);
+           -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0); }
+}
+
+/* p7 */
+.p7{background-image: url(../images/p1/bg.png); background-repeat: no-repeat;}
+
+.p7 .success {display: none;}
+.p7 .success .e-1{position: absolute; top: 0px;  left: 119px;}
+.p7 .success .e-2{position: absolute; top: 290px;  left: 12px;}
+.p7 .success .e-3{position: absolute; top: 2px;  left: 75px;}
+.p7 .success .bed{position: absolute; top: 390px;  left: 15px;}
+.p7 .success .score{position: absolute; top: 70px;  left: 55px; width: 360px; height: 130px; font-size: 70px; color: #fff; font-weight: bold; text-align: center;}
+
+.p7 .fail {display: none;}
+.p7 .fail .e-1{position: absolute; top: 67px;  left: 55px;}
+.p7 .fail .e-2{position: absolute; top: 195px;  left: 38px;}
+
+.p7 .e-4{position: absolute; bottom: 70px; left: 94px;}
+.p7 .e-5{position: absolute; bottom: 20px; left: 28px;}
+.p7 .e-6{position: absolute; bottom: 20px;  left: 170px;}
+.p7 .e-7{position: absolute; bottom: 20px;  left: 317px;}
+
+/* p8 */
+.p8{background-image: url(../images/p8/bg.png); background-repeat: no-repeat;}
+.p8 .back{position: absolute; top: 0px;  left: 0px; width: 80px; height: 45px;}
+.p8 .list{position: absolute; top: 80px;  left: 48px; width: 480px; height: 570px; background-color: yellow; opacity: 0.5;}
+.p8 .list li{float: left; margin-left: 50px; margin-top: 10px; width: 210px; height: 180px; background-color: #336699;}
+
+.p8 .rank1 .icon{position: absolute; top: 84px;  left: 48px; display: block; width: 19px; height: 18px; background-image: url(../images/p8/1st.png); background-repeat: no-repeat;}
+.p8 .rank1 .no{position: absolute; top: 78px;  left: 73px; font-size: 24px; color: yellow;}
+.p8 .rank1 .player1headimg-border{position: absolute; top: 105px;  left: 74px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank1 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank1 .player1nickname{position: absolute; top: 171px;  left: 74px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank1 .player2headimg-border{position: absolute; top: 105px;  left: 145px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank1 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank1 .player2nickname{position: absolute; top: 171px;  left: 145px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank1 .score{position: absolute; top: 83px;  left: 145px; font-size: 18px; color: #fff;}
+
+.p8 .rank2 .icon{position: absolute; top: 196px;  left: 48px; display: block; width: 19px; height: 18px; background-image: url(../images/p8/2nd.png); background-repeat: no-repeat;}
+.p8 .rank2 .no{position: absolute; top: 192px;  left: 73px; font-size: 24px; color: yellow;}
+.p8 .rank2 .player1headimg-border{position: absolute; top: 219px;  left: 74px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank2 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank2 .player1nickname{position: absolute; top: 287px;  left: 74px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank2 .player2headimg-border{position: absolute; top: 219px;  left: 145px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank2 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank2 .player2nickname{position: absolute; top: 287px;  left: 145px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank2 .score{position: absolute; top: 199px;  left: 145px; font-size: 18px; color: #fff;}
+
+.p8 .rank3 .icon{position: absolute; top: 310px;  left: 48px; display: block; width: 19px; height: 18px; background-image: url(../images/p8/3rd.png); background-repeat: no-repeat;}
+.p8 .rank3 .no{position: absolute; top: 306px;  left: 73px; font-size: 24px; color: yellow;}
+.p8 .rank3 .player1headimg-border{position: absolute; top: 333px;  left: 74px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank3 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank3 .player1nickname{position: absolute; top: 402px;  left: 74px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank3 .player2headimg-border{position: absolute; top: 333px;  left: 145px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank3 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank3 .player2nickname{position: absolute; top: 402px;  left: 145px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank3 .score{position: absolute; top: 311px;  left: 145px; font-size: 18px; color: #fff;}
+
+.p8 .rank4 .icon{position: absolute; top: 419px;  left: 48px; display: none;}
+.p8 .rank4 .no{position: absolute; top: 421px;  left: 73px; font-size: 24px; color: yellow;}
+.p8 .rank4 .player1headimg-border{position: absolute; top: 448px;  left: 74px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank4 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank4 .player1nickname{position: absolute; top: 515px;  left: 74px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank4 .player2headimg-border{position: absolute; top: 448px;  left: 145px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank4 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank4 .player2nickname{position: absolute; top: 515px;  left: 145px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank4 .score{position: absolute; top: 425px;  left: 145px; font-size: 18px; color: #fff;}
+
+.p8 .rank5 .icon{position: absolute; top: 535px;  left: 48px; display: none; }
+.p8 .rank5 .no{position: absolute; top: 536px;  left: 73px; font-size: 24px; color: yellow;}
+.p8 .rank5 .player1headimg-border{position: absolute; top: 562px;  left: 74px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank5 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank5 .player1nickname{position: absolute; top: 635px;  left: 74px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank5 .player2headimg-border{position: absolute; top: 562px;  left: 145px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank5 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank5 .player2nickname{position: absolute; top: 635px;  left: 145px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank5 .score{position: absolute; top: 541px;  left: 145px; font-size: 18px; color: #fff;}
+
+.p8 .rank6 .icon{position: absolute; top: 77px;  left: 271px; display: none;}
+.p8 .rank6 .no{position: absolute; top: 78px;  left: 271px; font-size: 24px; color: yellow;}
+.p8 .rank6 .player1headimg-border{position: absolute; top: 105px;  left: 272px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank6 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank6 .player1nickname{position: absolute; top: 171px;  left: 272px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank6 .player2headimg-border{position: absolute; top: 105px;  left: 351px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank6 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank6 .player2nickname{position: absolute; top: 171px;  left: 351px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank6 .score{position: absolute; top: 83px;  left: 350px; font-size: 18px; color: #fff;}
+
+.p8 .rank7 .icon{position: absolute; top: 191px;  left: 271px; display: none;}
+.p8 .rank7 .no{position: absolute; top: 192px;  left: 271px; font-size: 24px; color: yellow;}
+.p8 .rank7 .player1headimg-border{position: absolute; top: 219px;  left: 272px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank7 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank7 .player1nickname{position: absolute; top: 287px;  left: 272px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank7 .player2headimg-border{position: absolute; top: 219px;  left: 351px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank7 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank7 .player2nickname{position: absolute; top: 287px;  left: 351px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank7 .score{position: absolute; top: 199px;  left: 350px; font-size: 18px; color: #fff;}
+
+.p8 .rank8 .icon{position: absolute; top: 305px;  left: 271px; display: none;}
+.p8 .rank8 .no{position: absolute; top: 306px;  left: 271px; font-size: 24px; color: yellow;}
+.p8 .rank8 .player1headimg-border{position: absolute; top: 333px;  left: 272px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank8 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank8 .player1nickname{position: absolute; top: 402px;  left: 272px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank8 .player2headimg-border{position: absolute; top: 333px;  left: 351px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank8 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank8 .player2nickname{position: absolute; top: 402px;  left: 351px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank8 .score{position: absolute; top: 311px;  left: 350px; font-size: 18px; color: #fff;}
+
+.p8 .rank9 .icon{position: absolute; top: 419px;  left: 271px; display: none;}
+.p8 .rank9 .no{position: absolute; top: 421px;  left: 271px; font-size: 24px; color: yellow;}
+.p8 .rank9 .player1headimg-border{position: absolute; top: 448px;  left: 272px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank9 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank9 .player1nickname{position: absolute; top: 515px;  left: 272px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank9 .player2headimg-border{position: absolute; top: 448px;  left: 351px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank9 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank9 .player2nickname{position: absolute; top: 515px;  left: 351px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank9 .score{position: absolute; top: 425px;  left: 350px; font-size: 18px; color: #fff;}
+
+.p8 .rank10 .icon{position: absolute; top: 535px;  left: 271px; display: none; }
+.p8 .rank10 .no{position: absolute; top: 536px;  left: 271px; font-size: 24px; color: yellow;}
+.p8 .rank10 .player1headimg-border{position: absolute; top: 562px;  left: 272px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank10 .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank10 .player1nickname{position: absolute; top: 635px;  left: 272px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank10 .player2headimg-border{position: absolute; top: 562px;  left: 351px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .rank10 .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .rank10 .player2nickname{position: absolute; top: 635px;  left: 351px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .rank10 .score{position: absolute; top: 541px;  left: 350px; font-size: 18px; color: #fff;}
+
+.p8 .current-rank .no{position: absolute; top: 690px;  left: 95px; font-size: 24px; color: yellow;}
+.p8 .current-rank .player1headimg-border{position: absolute; top: 675px;  left: 175px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .current-rank .player1headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .current-rank .player1nickname{position: absolute; top: 740px;  left: 182px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .current-rank .player2headimg-border{position: absolute; top: 675px;  left: 241px; display: block; width: 65px; height: 65px; background-image: url(../images/p8/headimg-border.png); background-repeat: no-repeat;}
+.p8 .current-rank .player2headimg{width: 57px; height: 58px; margin: 4px 0px 0px 3px;}
+.p8 .current-rank .player2nickname{position: absolute; top: 740px;  left: 248px; font-size: 18px; color: #fff; width: 65px; overflow: hidden;text-align: center; display:block; white-space: nowrap; text-overflow: ellipsis;}
+.p8 .current-rank .score{position: absolute; top: 695px;  left: 320px; font-size: 18px; color: #fff;}
