@@ -69,9 +69,10 @@
         </div>
 
         <div class="swiper-slide p2">
-            <img src="images/p2/e-1.png" alt="" class="e-1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            <img src="images/p2/e-1.png" alt="" class="e-1" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
             <div id="p2-e-2" class="e-2 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.2s" swiper-animate-delay="1s"><!-- <img src="images/p2/e-2_animation/1.png" alt=""> --></div>
             <div id="p2-e-3" class="e-3 ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.2s" swiper-animate-delay="1s"><!-- <img src="images/p2/e-3_animation/1.png" alt=""> --></div>
+            <div class="gamerules"><img class="confirm" src="images/p2/confirm.png" alt=""></div>
         </div>
 
         <div class="swiper-slide p3">

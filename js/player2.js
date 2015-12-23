@@ -525,25 +525,28 @@ app.p6.game_win = function(){
     app.audio.stop();
     app.template.data.add("score", app.p6.shaketimercountdown);
     app.template.data.add("result", "success");
-    
-    window.overlay = new mo.Overlay({
+
+    window.overlay_game_win = new mo.Overlay({
         content: '<img class="disclaimerimg" src="images/p6/m-2.png" >',
         width: 480,
         height: 773
     });
 
-    overlay.on('open', function(){
+    overlay_game_win.on('open', function(){
         $(".mo-pop").css({"top": "0px"});
     });
 
+    TimerJS.destory();
+
     setTimeout(function(){
-        window.overlay.close();
+        window.overlay_game_win.close();
+
+        
+        app.p6.removelistener_updatescore();
+        app.p6.updateplayertonotready();
+
         app.template.swiper.next();
     }, 3000);
-
-    TimerJS.destory();
-    app.p6.removelistener_updatescore();
-    app.p6.updateplayertonotready();
 };
 
 app.p6.updateplayer2shaketime = function(){

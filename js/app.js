@@ -303,7 +303,6 @@ app.p1.destory = function(){
 ====================================================== */
 app.p2 = function(){};
 app.p2.init = function(){
-    this.show_gameroles();
 };
 
 app.p2.bind_touch_event = function(){
@@ -314,6 +313,15 @@ app.p2.bind_touch_event = function(){
     $(".p2 .e-3").on("touchend", function(){
         app.p2.gonextpage("girl");
     });
+
+
+    $(".p2 .confirm").on("touchend", function(){
+        $(".p2 .gamerules").hide();
+        $(".p2 .e-1").show();
+        app.p2.show_e2_animation();
+        app.p2.show_e3_animation();
+    });
+
 };
 
 app.p2.gonextpage = function(sex){
@@ -321,25 +329,6 @@ app.p2.gonextpage = function(sex){
         app.template.swiper.next();
 };
 
-app.p2.show_gameroles = function(){
-    window.overlay = new mo.Overlay({
-        content: '<div class="gamerules"><img class="confirm" src="images/p2/confirm.png" alt="" class="confirm"></div>',
-        width: 480,
-        height: 773
-    });
-    
-    overlay.on('open', function(){
-        $(".mo-pop").css({"top": "0px"});
-
-        $('.confirm').on('touchend', function(){
-            $('.p2 .confirm').hide();
-            window.overlay.close();
-        });
-
-        app.p2.show_e2_animation();
-        app.p2.show_e3_animation();
-    });
-};
 
 
 app.p2.show_e2_animation = function(){
@@ -373,7 +362,8 @@ app.p2.show_e3_animation = function(){
 };
 
 app.p2.destory = function(){
-    $('.confirm').show();
+    $(".p2 .gamerules").show();
+    $(".p2 .e-1").hide();
 };
 
 
@@ -669,24 +659,27 @@ app.p6.game_win = function(){
     app.template.data.add("score", app.p6.shaketimercountdown);
     app.template.data.add("result", "success");
 
-    window.overlay = new mo.Overlay({
+    window.overlay_game_win = new mo.Overlay({
         content: '<img class="disclaimerimg" src="images/p6/m-2.png" >',
         width: 480,
         height: 773
     });
 
-    overlay.on('open', function(){
+    overlay_game_win.on('open', function(){
         $(".mo-pop").css({"top": "0px"});
     });
 
+    TimerJS.destory();
+
     setTimeout(function(){
-        window.overlay.close();
+        window.overlay_game_win.close();
+
+        
+        app.p6.removelistener_updatescore();
+        app.p6.updateplayertonotready();
+
         app.template.swiper.next();
     }, 3000);
-
-    TimerJS.destory();
-    app.p6.removelistener_updatescore();
-    app.p6.updateplayertonotready();
 };
 
 app.p6.updateplayer1shaketime = function(){
